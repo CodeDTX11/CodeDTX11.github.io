@@ -39,9 +39,19 @@ window.onscroll = function () {
 
 };
 
-window.addEventListener("load", function() {
-    document.body.style.display = "block"; // Show the page after image is loaded
-});
+// window.addEventListener("load", function() {
+//     document.body.style.display = "block"; // Show the page after image is loaded
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const img = new Image();
+    img.src = "/assets/images/Tsunami_by_hokusai.jpg";  // Path to your background image
+  
+    img.onload = () => {
+      document.body.style.visibility = "visible";
+    //   document.body.style.opacity = "1";
+    };
+  });
 
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".pop-fade-element");
