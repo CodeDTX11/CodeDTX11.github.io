@@ -1,5 +1,3 @@
-
-
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault();
     const form = event.target;
@@ -45,10 +43,16 @@ window.addEventListener("load", function() {
     document.body.style.display = "block"; // Show the page after image is loaded
 });
 
-// When the user clicks on the button, scroll to the top of the document
-// scrollToTopBtn.addEventListener("click", function () {
-//     window.scrollTo({
-//         top: 0,
-//         behavior: "smooth"
-//     });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".pop-fade-element");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(element => observer.observe(element));
+});

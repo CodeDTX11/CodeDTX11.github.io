@@ -29,20 +29,6 @@
   border: black;
 }
 
-.background-img111111 {
-  /* background-image: url('../images/Tsunami_by_hokusai.jpg'); */
-  /* opacity: 70%; */
-  background-size: cover;
-  background-position: center; /* Optional: centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  height: 90vh; /* Adjust the height as needed */
-  width: 100%; /* Ensure element has dimensions */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Center text horizontally */
-}
-
 .background-img {
   position: relative;
   display: flex;
@@ -86,4 +72,15 @@
 
 body {
   display: none; /* Hide content until image is loaded */
+}
+
+.pop-fade-element {
+  opacity: 0;
+  transform: scale(0.85) translateY(40px);
+  transition: all .8s ease;
+}
+
+.pop-fade-element.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
