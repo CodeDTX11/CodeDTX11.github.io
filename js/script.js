@@ -46,12 +46,12 @@ window.onscroll = function () {
 document.addEventListener("DOMContentLoaded", () => {
     const img = new Image();
     img.src = "/assets/images/Tsunami_by_hokusai.jpg";  // Path to your background image
-  
+
     img.onload = () => {
-      document.body.style.visibility = "visible";
-    //   document.body.style.opacity = "1";
+        document.body.style.visibility = "visible";
+        //   document.body.style.opacity = "1";
     };
-  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll(".pop-fade-element");
@@ -66,3 +66,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     elements.forEach(element => observer.observe(element));
 });
+
+// Add your JavaScript code here
+
+function handleSurprise(button) {
+    button.innerText = button.innerText === 'SURPRISE!' ? 'CLICK TO UNROLL!' : 'SURPRISE!';
+    
+    const surpriseImage = document.getElementById('surpriseImage');
+    const img = surpriseImage.querySelector('img');
+
+    if (surpriseImage.style.display === 'none') {
+        surpriseImage.style.display = 'block';
+        setTimeout(() => {
+            img.style.maxWidth = '100%';
+        }, 100); // Small delay to ensure transition works
+    } else {
+        img.style.maxWidth = '0%';
+        setTimeout(() => {
+            surpriseImage.style.display = 'none';
+        }, 1500); // Small delay to ensure transition works
+    }
+}
+
+
+// function handleSurprise(button) {
+//     const surpriseImage = document.getElementById('surpriseImage');
+//     const img = surpriseImage.querySelector('img');
+//     surpriseImage.style.display = 'block';
+//     setTimeout(() => {
+//         img.style.maxWidth = '100%';
+//     }, 100); // Small delay to ensure transition works
+// }
