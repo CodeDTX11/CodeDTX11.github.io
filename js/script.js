@@ -9,7 +9,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         }
     }).then(response => {
         if (response.ok) {
-            document.getElementById("successMessage").style.display = "block";
+            document.getElementById("successMessage").classList.add("reveal");
             form.reset();
         } else {
             alert("There was an error submitting the form. Please try again.");
@@ -72,22 +72,26 @@ document.addEventListener("DOMContentLoaded", function () {
 function handleSurprise(button) {
     button.innerText = button.innerText === 'SURPRISE!' ? 'CLICK TO UNROLL!' : 'SURPRISE!';
     
-    const surpriseImage = document.getElementById('surpriseImage');
-    const img = surpriseImage.querySelector('img');
+    const surpriseImage = document.querySelector('.rainbow-text');
+    const img = document.querySelector('.rickroll-img'); 
 
-    if (surpriseImage.style.display === 'none') {
-        surpriseImage.style.display = 'block';
+    if (!surpriseImage.classList.contains('active')) {
+        surpriseImage.classList.add('active');
+        // surpriseImage.style.display = 'block';
+        console.log('surpriseImage.classList', surpriseImage.classList);
         setTimeout(() => {
             img.style.maxWidth = '100%';
         }, 100); // Small delay to ensure transition works
+        
     } else {
+        surpriseImage.classList.remove('active');
+        console.log('remove surpriseImage.classList', surpriseImage.classList);
         img.style.maxWidth = '0%';
-        setTimeout(() => {
-            surpriseImage.style.display = 'none';
-        }, 1500); // Small delay to ensure transition works
+        // setTimeout(() => {
+        //     surpriseImage.style.display = 'none';
+        // }, 1500); // Small delay to ensure transition works
     }
 }
-
 
 // function handleSurprise(button) {
 //     const surpriseImage = document.getElementById('surpriseImage');

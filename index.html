@@ -28,7 +28,7 @@
   <div id="navbar" class="bg-black">
 
     <header class="d-flex flex-wrap justify-content-center py-3">
-    
+
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="#" class="nav-link" onclick="scrollToSection(event, 'about-me')">About Me</a></li>
         <li class="nav-item"><a href="#" class="nav-link" onclick="scrollToSection(event, 'education')">Education</a>
@@ -45,8 +45,8 @@
   <div>
     <div class="p-5 text-center background-img">
       <div class="container py-5">
-        <h1 class="display-1 fw-bold mb-3 text-body-emphasis">Dylan Messerly</h1>
-        <p class="col-lg-8 mx-auto lead fw-bold text-black fs-2 text-decoration-underline">Software Aficionado</p>
+        <h1 class="display-1 fw-bold mb-3 text-body-emphasis filling-text-title">Dylan Messerly</h1>
+        <p class="col-lg-8 mx-auto lead fw-bold text-black fs-2 text-decoration-underline filling-text-title">Software Aficionado</p>
       </div>
     </div>
   </div>
@@ -88,11 +88,12 @@
             <a class="text-body-secondary mx-2" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
                 src="assets/images/leetcode-logo.png" height="50"></a>
           </div>
-            <button type="submit" class="rainbow-btn btn btn-lg" value="Send" onclick="handleSurprise(this)">SURPRISE!</button>
-            <div id="surpriseImage" style="display: none; text-align: center; margin-top: 20px;">
-                <h3 class="rainbow-text"><em>GOTCHA! Long live the rickroll.</em></h3>
-                <img src="assets/images/icegif-162.gif" alt="Surprise!" class="rickroll-img">
-            </div>
+          <button type="submit" class="rainbow-btn btn btn-lg" value="Send"
+            onclick="handleSurprise(this)">SURPRISE!</button>
+          <div style="text-align: center; margin-top: 20px;">
+            <h3 class="rainbow-text"><em>GOTCHA! Long live the Rickroll.</em></h3>
+            <img src="assets/images/icegif-162.gif" alt="Surprise!" class="rickroll-img">
+          </div>
         </div>
       </div>
     </div>
@@ -258,13 +259,13 @@
         </div>
       </div>
     </div>
-    
+
     <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
       <div class="p-3 text-center">
         <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-10 col-sm-8 col-lg-4">
             <img src="assets/images/pong.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-            width="300" loading="lazy">
+              width="300" loading="lazy">
           </div>
           <div class="col-lg-8">
             <h1 class="fs-2 fw-bold lh-1">Classic Pong</h1>
@@ -304,19 +305,19 @@
               </svg></a>
           </div>
           <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/leetcode-image.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-              loading="lazy" width="250">
+            <img src="assets/images/leetcode-image.png" class="d-block mx-lg-auto img-fluid rounded-3"
+              alt="project image" loading="lazy" width="250">
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
       <div class="p-3 text-center">
         <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-10 col-sm-8 col-lg-4">
             <img src="assets/images/python-image.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-            loading="lazy">
+              loading="lazy">
           </div>
           <div class="col-lg-8">
             <h1 class="fs-2 fw-bold lh-1">So Much More!</h1>
@@ -391,8 +392,10 @@
 
             <button type="submit" class="btn btn-primary text-black w-100" value="Send">Send</button>
           </form>
-          <h2 id="successMessage" class="text-center mt-5 text-black fw-medium" style="display: none;">Message sent
-            successfully!</h2>
+          <div class="text-wrapper">
+            <h2 id="successMessage" class="filling-text text-center mt-4 text-black fw-medium ">Message sent
+              successfully!</h2>
+          </div>
         </div>
       </div>
     </div>

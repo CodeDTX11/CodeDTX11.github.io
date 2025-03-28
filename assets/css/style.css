@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height:90vh;
+  height:93vh;
   width:100%;
 }
 
@@ -13,7 +13,7 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  height:90vh;
+  height:93vh;
   width:100%;
   top:0px;
   left: 0px;
@@ -50,7 +50,6 @@ body {
   height: 3rem;
   border-radius: 0.75rem;
 }
-
 
 #scrollToTopBtn {
   position: fixed;
@@ -93,7 +92,6 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  /* text-transform: uppercase; */
   transition: transform 0.2s, box-shadow 0.2s;
   animation: rainbowShift 12s linear infinite;
 }
@@ -112,11 +110,17 @@ body {
 }
 
 .rainbow-text {
+  color: transparent;
+  /* user-select: none; */
+  visibility: hidden;
+}
+
+.rainbow-text.active {
   background: linear-gradient(115deg, red, orange, yellow, green, cyan, blue, violet);
   background-size: 400% 400%;
   background-clip: text;
+  visibility: visible;
   -webkit-background-clip: text;
-  color: transparent;
   animation: rainbowShift 12s linear infinite;
 }
 
@@ -124,4 +128,30 @@ body {
   max-width: 0%;
   height: auto;
   transition: max-width 1.5s ease-in-out;
+}
+
+.text-wrapper {
+  overflow: hidden;  /* Ensures the text is initially hidden */
+}
+
+ .filling-text-title { 
+  clip-path: inset(0 100% 0 0);  /* Start with text clipped from the right */
+  animation: revealClip 5s ease-out;  /* Animation to reveal the text */
+  animation-fill-mode: forwards;  /* Keep the final state of the animation */
+  animation-delay: 0.5s;
+}
+
+@keyframes revealClip {
+  100% {
+    clip-path: inset(0 0 0 0);  /* Remove clipping, revealing the text */
+  }
+}
+
+.filling-text {
+  clip-path: inset(0 100% 0 0);  /* Start with text clipped from the right */
+  transition: clip-path 3s ease-out;
+}
+
+.filling-text.reveal {
+  clip-path: inset(0 0 0 0);  /* Removes clipping, fully reveals text */
 }
