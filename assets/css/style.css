@@ -135,10 +135,18 @@ body {
 }
 
  .filling-text-title { 
+  color: black;
   clip-path: inset(0 100% 0 0);  /* Start with text clipped from the right */
-  animation: revealClip 5s ease-out;  /* Animation to reveal the text */
+  animation: revealClip 4s ease-out;  /* Animation to reveal the text */
   animation-fill-mode: forwards;  /* Keep the final state of the animation */
   animation-delay: 0.5s;
+}
+
+.satisfy {
+  font-family: "Satisfy", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 6rem;
 }
 
 @keyframes revealClip {
