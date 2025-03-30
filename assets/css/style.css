@@ -146,12 +146,7 @@ body {
   font-family: "Satisfy", cursive;
   font-weight: 600;
   font-style: normal;
-}
-
-@media (min-width: 768px) {
-  .satisfy {
-    font-size: 7vw;
-  }
+  font-size: max(7.5vw, 5rem)
 }
 
 @keyframes revealClip {
