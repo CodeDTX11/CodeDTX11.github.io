@@ -93,6 +93,10 @@ function handleSurprise(button) {
     }
 }
 
+// Make sure year is updated dynamically, for footer
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
 // function handleSurprise(button) {
 //     const surpriseImage = document.getElementById('surpriseImage');
 //     const img = surpriseImage.querySelector('img');
