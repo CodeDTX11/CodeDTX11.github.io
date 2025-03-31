@@ -28,9 +28,9 @@ body {
 }
 
 .gradient-background {
-  background: linear-gradient(300deg, #042962, #4297b1, #ffffff);
+  background: linear-gradient(280deg, #042962, #4186a7, #6ed9dd);
   background-size: 180% 180%;
-  animation: gradient-animation 18s ease infinite;
+  animation: gradient-animation 15s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -162,4 +162,9 @@ body {
 
 .filling-text.reveal {
   clip-path: inset(0 0 0 0);  /* Removes clipping, fully reveals text */
+}
+
+.nav-link:hover, #download:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
 }

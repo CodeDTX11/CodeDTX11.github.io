@@ -31,7 +31,7 @@ const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
 
-    if (document.documentElement.scrollTop < 100 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 100) {
+    if (document.documentElement.scrollTop < 300 || (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 300) {
         scrollToTopBtn.style.display = "none";
     } else {
         scrollToTopBtn.style.display = "block";
