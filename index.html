@@ -15,420 +15,442 @@
   <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 </head>
 
-<body class="gradient-background">
-  <!-- navbar -->
-  <!-- <button id="scrollToTopBtn" class="btn btn-primary" title="Go to top">Top</button> -->
+<body >
 
-  <a id="scrollToTopBtn" class="text-body-secondary" href="#" onclick="scrollToSection(event, 'navbar')">
-    <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="black" class="bi bi-arrow-up-circle-f</svg>ill"
-      viewBox="0 0 16 16">
-      <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 
+  <main class="gradient-background">
+    <!-- navbar -->
+    <!-- <button id="scrollToTopBtn" class="btn btn-primary" title="Go to top">Top</button> -->
+
+    <a id="scrollToTopBtn" class="text-body-secondary" href="#" onclick="scrollToSection(event, 'navbar')">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="black" class="bi bi-arrow-up-circle-f</svg>ill"
+        viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 
         0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 
         .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-    </svg>
-  </a>
+      </svg>
+    </a>
 
-  <section id="navbar" class="bg-black">
+    <section id="navbar" class="bg-black">
 
-    <header class="d-flex flex-wrap justify-content-center py-3">
+      <header class="d-flex flex-wrap justify-content-center py-3">
 
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#" class="nav-link fw-bold" onclick="scrollToSection(event, 'about-me')">About Me</a></li>
-        <li class="nav-item"><a href="#" class="nav-link fw-bold" onclick="scrollToSection(event, 'education')">Education</a>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link fw-bold" onclick="scrollToSection(event, 'projects')">Projects</a></li>
-        <li class="nav-item"><a href="#" class="nav-link fw-bold" onclick="scrollToSection(event, 'skills')">Skills</a></li>
-        <li class="nav-item"><a href="#" class="nav-link fw-bold" onclick="scrollToSection(event, 'contact-me')">Contact Me</a>
-        </li>
-        <li class="nav-item"><a href="view_resume.html" class="nav-link fw-bold">View My Resumé</a></li>
-      </ul>
-    </header>
-  </section>
-  <!-- name section -->
-  <section>
-    <div class="p-5 text-center background-img">
-      <div class="container py-5 filling-text-title ">
-        <h1 class="mb-3 satisfy">Dylan Messerly</h1>
-        <h2 class="mx-auto fw-bold display-5 text-decoration-underline">Software Aficionado</h2>
-      </div>
-    </div>
-  </section>
-  <!-- about me -->
-  <section id="about-me" class="container px-4 pt-5 bg-body-primary rounded-3">
-    <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
-      <div class="col-10 col-sm-8 col-lg-4">
-        <img src="assets/images/profile-wo-bg.png" class="d-block mx-lg-auto img-fluid " alt="profile image" width="350"
-          height="500" loading="lazy">
-      </div>
-      <div class="col-lg-8">
-        <h2 class="display-6 fw-bold text-body-emphasis text-decoration-underline mb-3">About Me</h2>
-        <p class="lead fw-medium">
-          Welcome to my webpage! My name is Dylan Messerly, and I am a graduate of Texas State University, where I
-          earned a Bachelor of Science in Computer Science with a minor in Mathematics.
-          <br><br>
-          During my time at university I specialized in C++ and developed a passion and tenacity for problem solving.
-          Since graduation I have continued my education by practicing data structures, algorithms and learning new
-          languages such as SQL and Javascript to name a few. I am currently learning Python and aim to be an AI expert.
-          <br><br>
-          I have internship experience as a software developer at Cook Systems where I worked individually and on teams
-          to develop web applications and APIs. I specialized in Javascript, Java, Angular and Spring Boot to bring
-          web applications to life and learned valuable skills in the process and had a blast doing it!
-          <br><br>
-          I am seeking a full time software developer position but I am also available for part-time or an
-          internship if that is all that is available.
-          <br><br>
-          I know I will be a great addition to your team. Let me know what great opportunities you have!
-          Check out my resumé and links below!
-        </p>
-        <div class="d-grid gap-2 d-flex flex-wrap justify-content-start">
-          <a id="download" class="btn btn-primary btn-lg px-4 me-md-2 text-black" href="assets/dylan_messerly_resume.pdf"
-            download>Download Resumé</a>
-          <div class="d-flex flex-wrap">
-            <a class="text-body-secondary mx-2" href="https://github.com/CodeDTX11" target="_blank"><img
-                src="assets/images/github.svg" height="50"></a>
-            <a class="text-body-secondary mx-2" href="https://www.linkedin.com/in/dylan-messerly/" target="_blank"><img
-                src="assets/images/linkedin.svg" height="50"></a>
-            <a class="text-body-secondary mx-2" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
-                src="assets/images/leetcode-logo.png" height="50"></a>
-          </div>
-          <button type="submit" class="rainbow-btn btn btn-lg" value="Send"
-            onclick="handleSurprise(this)">SURPRISE!</button>
-          <div class="text-center">
-            <h3 class="rainbow-text mt-3"><em>GOTCHA! Long live the Rickroll.</em></h3>
-            <img src="assets/images/icegif-162.gif" alt="Surprise!" class="rickroll-img pb-5">
-          </div>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link fw-bold" onclick="scrollToSection(event, 'about-me')">About
+              Me</a></li>
+          <li class="nav-item"><a href="#" class="nav-link fw-bold"
+              onclick="scrollToSection(event, 'education')">Education</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link fw-bold"
+              onclick="scrollToSection(event, 'projects')">Projects</a></li>
+          <li class="nav-item"><a href="#" class="nav-link fw-bold"
+              onclick="scrollToSection(event, 'skills')">Skills</a></li>
+          <li class="nav-item"><a href="#" class="nav-link fw-bold"
+              onclick="scrollToSection(event, 'contact-me')">Contact Me</a>
+          </li>
+          <li class="nav-item"><a href="view_resume.html" class="nav-link fw-bold">View My Resumé</a></li>
+        </ul>
+      </header>
+    </section>
+    <!-- name section -->
+    <section>
+      <div class="p-5 text-center background-img">
+        <div class="container py-5 filling-text-title ">
+          <h1 class="mb-3 satisfy">Dylan Messerly</h1>
+          <h2 class="mx-auto fw-bold display-5 text-decoration-underline">Software Aficionado</h2>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- education  -->
-
-  <section id="education" class="py-5 border-black border-top">
-
-    <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Education</h2>
-
-    <div class="container bg-body-secondary rounded-3 py-3 my-3 pop-fade-element">
-      <div class="row p-2">
+    </section>
+    <!-- about me -->
+    <section id="about-me" class="container px-4 pt-5 bg-body-primary rounded-3">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+        <div class="col-10 col-sm-8 col-lg-4">
+          <img src="assets/images/profile-wo-bg.png" class="d-block mx-lg-auto img-fluid " alt="profile image"
+            width="350" height="500" loading="lazy">
+        </div>
         <div class="col-lg-8">
-          <h2 class="fw-bold">Texas State University</h2>
-          <h4 class="text-secondary">Bachelor of Science in Computer Science - Minor in Mathematics</h4>
-          <p class="lead mb-0">
-            Focused on C++ and Java development.
-            <br>
-            Unique Courses: Machine Learning, Compiler Construction, Parallel Programming & Networks.<br>
-            <b>Honors:</b> Summa cum laude & Computer Science Undergraduate Academic Excellence Award
+          <h2 class="display-6 fw-bold text-body-emphasis text-decoration-underline mb-3">About Me</h2>
+          <p class="lead fw-medium">
+            Welcome to my webpage! My name is Dylan Messerly, and I am a graduate of Texas State University, where I
+            earned a Bachelor of Science in Computer Science with a minor in Mathematics.
+            <br><br>
+            During my time at university I specialized in C++ and developed a passion and tenacity for problem solving.
+            Since graduation I have continued my education by practicing data structures, algorithms and learning new
+            languages such as SQL and Javascript to name a few. I am currently learning Python and aim to be an AI
+            expert.
+            <br><br>
+            I have internship experience as a software developer at Cook Systems where I worked individually and on
+            teams
+            to develop web applications and APIs. I specialized in Javascript, Java, Angular and Spring Boot to bring
+            web applications to life and learned valuable skills in the process and had a blast doing it!
+            <br><br>
+            I am seeking a full time software developer position but I am also available for part-time or an
+            internship if that is all that is available.
+            <br><br>
+            I know I will be a great addition to your team. Let me know what great opportunities you have!
+            Check out my resumé and links below!
           </p>
-
-        </div>
-        <div class="col-10 col-sm-8 col-lg-4 d-flex align-items-center justify-content-center">
-          <img src="assets/images/supercat-logo.png" class="img-fluid" alt="TXST logo" width="120" height="120"
-            loading="lazy">
-        </div>
-      </div>
-    </div>
-
-    <div class="container bg-body-secondary rounded-3 py-3 my-3 pop-fade-element">
-      <div class="row p-2">
-        <div class="col-lg-8">
-          <h2 class="fw-bold">Texas State University</h2>
-          <h4 class="text-secondary">Bachelor of Business Administration in Management</h4>
-          <p class="lead mb-0">
-            Specialized in entrepreneurial studies.<br>
-            <b>Honors:</b> Dean's List Multiple Semesters
-          </p>
-
-        </div>
-        <div class="col-10 col-sm-8 col-lg-4 d-flex align-items-center justify-content-center">
-          <img src="assets/images/supercat-logo.png" class="img-fluid" alt="TXST logo" width="120" height="120"
-            loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- projects  -->
-  <section id="projects" class="py-5 border-black border-top">
-
-    <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Projects</h2>
-
-    <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
-      <div class="p-3 text-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/mgt-app.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-              loading="lazy">
-          </div>
-          <div class="col-lg-8">
-            <h2 class="fs-2 fw-bold lh-1">Employee Management App</h2>
-            <p class="lead text-start">
-              • Built a full-stack web application that provides businesses and their employees a smart and efficient
-              way of communicating and organizing in collaboration with a team.<br>
-              • Integrated the client and server by using scalable RESTful API endpoints and provided real-time client
-              side updates to their feed.<br>
-              • Utilized Spring Boot and JPA to create an efficient and layered PostgreSQL database on the backend
-              and used Angular to create a responsive and user-friendly front-end.<br>
-            </p>
-            <a href="https://github.com/CodeDTX11/employee_mgt_fullstack" target="_blank"> <svg
-                xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                <path
-                  d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-              </svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
-      <div class="p-3 text-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-lg-8">
-            <h2 class="fs-2 fw-bold lh-1">Spotify Guessing Game</h2>
-            <p class="lead text-start">
-              • Created a front-end Angular application that uses data pulled via the Spotify Web API to create a game
-              that has the player guess the artists of the provided track samples.<br>
-              • Delivered a dynamic and unique play experience each time with configurable settings and randomized
-              tracks and artists of the player’s specified genre.
-            </p>
-            <a href="https://github.com/CodeDTX11/guess_who_spotify" target="_blank"> <svg
-                xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                <path
-                  d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-              </svg></a>
-          </div>
-          <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/whos-who-app.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-              loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
-      <div class="p-3 text-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/xapi.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-              loading="lazy">
-          </div>
-          <div class="col-lg-8">
-            <h2 class="fs-2 fw-bold lh-1">Twitter (X) Backend API</h2>
-            <p class="lead text-start">
-              • Developed a backend RESTful Web Service that mimics Twitter with multiple endpoints for creating,
-              updating and retrieving user information and social media posts.<br>
-              • Created an efficient database schema/ERD supported by PostgreSQL in PGAdmin4 and utilized Spring Boot
-              and JPA to seamlessly handle data to and from the server.
-
-            </p>
-            <a href="https://github.com/CodeDTX11/Twitter_api" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
-                width="40" height="40" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                <path
-                  d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                <path
-                  d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-              </svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
-      <div class="p-3 text-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-lg-8">
-            <h2 class="fs-2 fw-bold lh-1">Snake</h2>
-            <p class="lead text-start">
-              • Classic console based snake game! Programmed in C++ and runs in a windows environment.<br>
-              • Complete with pause, replay, high score, and death animation.
-            </p>
-            <a href="https://github.com/CodeDTX11/snake" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
-                width="40" height="40" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                <path
-                  d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                <path
-                  d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-              </svg></a>
-          </div>
-          <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/snake.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-              loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
-      <div class="p-3 text-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/pong.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-              width="300" loading="lazy">
-          </div>
-          <div class="col-lg-8">
-            <h2 class="fs-2 fw-bold lh-1">Classic Pong</h2>
-            <p class="lead text-start">
-              • Created the classic pong game via a Python coded GUI. You can't beat the classics.<br>
-              • Message me for a challenge!
-            </p>
-            <a href="https://github.com/CodeDTX11/PyProjects/tree/main/pong-day22" target="_blank"> <svg
-                xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                <path
-                  d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-              </svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
-      <div class="p-3 text-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-lg-8">
-            <h2 class="fs-2 fw-bold lh-1">LeetCode Grind</h2>
-            <p class="lead text-start">
-              • I've put in the work on data structures and algorithms by solving 200+ LeetCode problems!<br>
-              • When I wasn't working on projects or studying, I was grinding leetcode problems to sharpen my
-              problem-solving skills. Also solved some HackerRank problems here and there.
-            </p>
-            <a href="https://leetcode.com/u/DTXcode11/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
-                width="40" height="40" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                <path
-                  d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                <path
-                  d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-              </svg></a>
-          </div>
-          <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/leetcode-image.png" class="d-block mx-lg-auto img-fluid rounded-3"
-              alt="project image" loading="lazy" width="200">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
-      <div class="p-3 text-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5">
-          <div class="col-10 col-sm-8 col-lg-4">
-            <img src="assets/images/python-image.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
-              loading="lazy">
-          </div>
-          <div class="col-lg-8">
-            <h2 class="fs-2 fw-bold lh-1">So Much More!</h2>
-            <p class="lead text-start">
-              • Plenty more projects! Check out my GitHub for more! I am always working on something new and am
-              currently learning Python and sharpening my AI tools and skills.
-            </p>
-            <a href="https://github.com/CodeDTX11?tab=repositories" target="_blank"> <svg
-                xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                <path
-                  d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-              </svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </section>
-
-  <!-- skills  -->
-  <section id="skills" class="py-5 border-black border-top">
-
-    <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Skills</h2>
-
-    <div class="d-flex flex-wrap gap-2 justify-content-center">
-      <span class="badge text-bg-primary p-2 text-black">C++</span>
-      <span class="badge text-bg-primary p-2 text-black">C</span>
-      <span class="badge text-bg-primary p-2 text-black">Java</span>
-      <span class="badge text-bg-primary p-2 text-black">JavaScript</span>
-      <span class="badge text-bg-primary p-2 text-black">Python</span>
-      <span class="badge text-bg-primary p-2 text-black">Angular</span>
-      <span class="badge text-bg-primary p-2 text-black">SpringBoot</span>
-      <span class="badge text-bg-primary p-2 text-black">SQL</span>
-      <span class="badge text-bg-primary p-2 text-black">FLask</span>
-      <span class="badge text-bg-primary p-2 text-black">APIs</span>
-      <span class="badge text-bg-primary p-2 text-black">Linux</span>
-      <span class="badge text-bg-primary p-2 text-black">HTML</span>
-      <span class="badge text-bg-primary p-2 text-black">CSS</span>
-      <span class="badge text-bg-primary p-2 text-black">Bootstrap</span>
-    </div>
-  </section>
-
-  <!-- contact me  -->
-  <section id="contact-me" class="pt-5 border-black border-top">
-
-    <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-4">Contact Me</h2>
-
-
-    <div class="container d-flex justify-content-center align-items-center">
-      <div class="row w-100">
-        <div class="col-lg-6 mx-auto">
-          <p class="lead text-center fw-medium">I use an online form submission API called <a
-              href="https://formspree.io/" class="text-black"><b>Formspree.io</b></a> for my contact form.
-            Please fill out the form below to get in touch. I'll get back to you ASAP!
-          </p>
-          <!-- https://formspree.io/f/xaneewdj -->
-          <form id="contactForm" action="https://formspree.io/f/xaneewdj" method="POST">
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" name="_replyto" class="form-control" id="email" aria-describedby="emailHelp"
-                placeholder="your_email@email.com" required>
+          <div class="d-grid gap-2 d-flex flex-wrap justify-content-start">
+            <a id="download" class="btn btn-primary btn-lg px-4 me-md-2 text-black"
+              href="assets/dylan_messerly_resume.pdf" download>Download Resumé</a>
+            <div class="d-flex flex-wrap">
+              <a class="text-body-secondary mx-2" href="https://github.com/CodeDTX11" target="_blank"><img
+                  src="assets/images/github.svg" height="50"></a>
+              <a class="text-body-secondary mx-2" href="https://www.linkedin.com/in/dylan-messerly/"
+                target="_blank"><img src="assets/images/linkedin.svg" height="50"></a>
+              <a class="text-body-secondary mx-2" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
+                  src="assets/images/leetcode-logo.png" height="50"></a>
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea name="body" class="form-control" id="message" rows="5" placeholder="Nice website!"
-                required></textarea>
+            <button type="submit" class="rainbow-btn btn btn-lg" value="Send"
+              onclick="handleSurprise(this)">SURPRISE!</button>
+            <div class="text-center">
+              <h3 class="rainbow-text mt-3"><em>GOTCHA! Long live the Rickroll.</em></h3>
+              <img src="assets/images/icegif-162.gif" alt="Surprise!" class="rickroll-img pb-5">
             </div>
-
-            <button type="submit" class="btn btn-primary text-black w-100" value="Send">Send</button>
-          </form>
-          <div class="text-wrapper">
-            <h2 id="successMessage" class="filling-text text-center mt-4 text-black fw-medium ">Message sent
-              successfully!</h2>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- footer  -->
-  <section class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-sm-4 col-3">
-        <p class="mb-3 mb-md-0 text-black fw-bold">Copyright &copy; <span id="year"></span> Yours Truly</p>
+    <!-- education  -->
+
+    <section id="education" class="py-5 border-black border-top">
+
+      <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Education</h2>
+
+      <div class="container bg-body-secondary rounded-3 py-3 my-3 pop-fade-element">
+        <div class="row p-2">
+          <div class="col-lg-8">
+            <h2 class="fw-bold">Texas State University</h2>
+            <h4 class="text-secondary">Bachelor of Science in Computer Science - Minor in Mathematics</h4>
+            <p class="lead mb-0">
+              Focused on C++ and Java development.
+              <br>
+              Unique Courses: Machine Learning, Compiler Construction, Parallel Programming & Networks.<br>
+              <b>Honors:</b> Summa cum laude & Computer Science Undergraduate Academic Excellence Award
+            </p>
+
+          </div>
+          <div class="col-10 col-sm-8 col-lg-4 d-flex align-items-center justify-content-center">
+            <img src="assets/images/supercat-logo.png" class="img-fluid" alt="TXST logo" width="120" height="120"
+              loading="lazy">
+          </div>
+        </div>
       </div>
 
-      <a class="text-body-secondary" href="#" onclick="scrollToSection(event, 'navbar')">
-        <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="black" class="bi bi-arrow-up-circle-fill"
-          viewBox="0 0 16 16">
-          <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 
+      <div class="container bg-body-secondary rounded-3 py-3 my-3 pop-fade-element">
+        <div class="row p-2">
+          <div class="col-lg-8">
+            <h2 class="fw-bold">Texas State University</h2>
+            <h4 class="text-secondary">Bachelor of Business Administration in Management</h4>
+            <p class="lead mb-0">
+              Specialized in entrepreneurial studies.<br>
+              <b>Honors:</b> Dean's List Multiple Semesters
+            </p>
+
+          </div>
+          <div class="col-10 col-sm-8 col-lg-4 d-flex align-items-center justify-content-center">
+            <img src="assets/images/supercat-logo.png" class="img-fluid" alt="TXST logo" width="120" height="120"
+              loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects  -->
+    <section id="projects" class="py-5 border-black border-top">
+
+      <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Projects</h2>
+
+      <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
+        <div class="p-3 text-center">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-10 col-sm-8 col-lg-4">
+              <img src="assets/images/mgt-app.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
+                loading="lazy">
+            </div>
+            <div class="col-lg-8">
+              <h2 class="fs-2 fw-bold lh-1">Employee Management App</h2>
+              <p class="lead text-start">
+                • Built a full-stack web application that provides businesses and their employees a smart and efficient
+                way of communicating and organizing in collaboration with a team.<br>
+                • Integrated the client and server by using scalable RESTful API endpoints and provided real-time client
+                side updates to their feed.<br>
+                • Utilized Spring Boot and JPA to create an efficient and layered PostgreSQL database on the backend
+                and used Angular to create a responsive and user-friendly front-end.<br>
+              </p>
+              <a href="https://github.com/CodeDTX11/employee_mgt_fullstack" target="_blank"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
+        <div class="p-3 text-center">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-lg-8">
+              <h2 class="fs-2 fw-bold lh-1">Spotify Guessing Game</h2>
+              <p class="lead text-start">
+                • Created a front-end Angular application that uses data pulled via the Spotify Web API to create a game
+                that has the player guess the artists of the provided track samples.<br>
+                • Delivered a dynamic and unique play experience each time with configurable settings and randomized
+                tracks and artists of the player’s specified genre.
+              </p>
+              <a href="https://github.com/CodeDTX11/guess_who_spotify" target="_blank"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg></a>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-4">
+              <img src="assets/images/whos-who-app.png" class="d-block mx-lg-auto img-fluid rounded-3"
+                alt="project image" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
+        <div class="p-3 text-center">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-10 col-sm-8 col-lg-4">
+              <img src="assets/images/xapi.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
+                loading="lazy">
+            </div>
+            <div class="col-lg-8">
+              <h2 class="fs-2 fw-bold lh-1">Twitter (X) Backend API</h2>
+              <p class="lead text-start">
+                • Developed a backend RESTful Web Service that mimics Twitter with multiple endpoints for creating,
+                updating and retrieving user information and social media posts.<br>
+                • Created an efficient database schema/ERD supported by PostgreSQL in PGAdmin4 and utilized Spring Boot
+                and JPA to seamlessly handle data to and from the server.
+
+              </p>
+              <a href="https://github.com/CodeDTX11/Twitter_api" target="_blank"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
+        <div class="p-3 text-center">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-lg-8">
+              <h2 class="fs-2 fw-bold lh-1">Snake</h2>
+              <p class="lead text-start">
+                • Classic console based snake game! Programmed in C++ and runs in a windows environment.<br>
+                • Complete with pause, replay, high score, and death animation.
+              </p>
+              <a href="https://github.com/CodeDTX11/snake" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
+                  width="40" height="40" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg></a>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-4">
+              <img src="assets/images/snake.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
+                loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
+        <div class="p-3 text-center">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-10 col-sm-8 col-lg-4">
+              <img src="assets/images/pong.png" class="d-block mx-lg-auto img-fluid rounded-3" alt="project image"
+                width="300" loading="lazy">
+            </div>
+            <div class="col-lg-8">
+              <h2 class="fs-2 fw-bold lh-1">Classic Pong</h2>
+              <p class="lead text-start">
+                • Created the classic pong game via a Python coded GUI. You can't beat the classics.<br>
+                • Message me for a challenge!
+              </p>
+              <a href="https://github.com/CodeDTX11/PyProjects/tree/main/pong-day22" target="_blank"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
+        <div class="p-3 text-center">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-lg-8">
+              <h2 class="fs-2 fw-bold lh-1">LeetCode Grind</h2>
+              <p class="lead text-start">
+                • I've put in the work on data structures and algorithms by solving 200+ LeetCode problems!<br>
+                • When I wasn't working on projects or studying, I was grinding leetcode problems to sharpen my
+                problem-solving skills. Also solved some HackerRank problems here and there.
+              </p>
+              <a href="https://leetcode.com/u/DTXcode11/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
+                  width="40" height="40" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg></a>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-4">
+              <img src="assets/images/leetcode-image.png" class="d-block mx-lg-auto img-fluid rounded-3"
+                alt="project image" loading="lazy" width="200">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container px-4 bg-body-secondary mt-3 rounded-3 pop-fade-element">
+        <div class="p-3 text-center">
+          <div class="row flex-lg-row-reverse align-items-center g-5">
+            <div class="col-10 col-sm-8 col-lg-4">
+              <img src="assets/images/python-image.png" class="d-block mx-lg-auto img-fluid rounded-3"
+                alt="project image" loading="lazy">
+            </div>
+            <div class="col-lg-8">
+              <h2 class="fs-2 fw-bold lh-1">So Much More!</h2>
+              <p class="lead text-start">
+                • Plenty more projects! Check out my GitHub for more! I am always working on something new and am
+                currently learning Python and sharpening my AI tools and skills.
+              </p>
+              <a href="https://github.com/CodeDTX11?tab=repositories" target="_blank"> <svg
+                  xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-link-45deg"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- skills  -->
+    <section id="skills" class="py-5 border-black border-top">
+
+      <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Skills</h2>
+
+      <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <span class="badge text-bg-primary p-2 text-black">C++</span>
+        <span class="badge text-bg-primary p-2 text-black">C</span>
+        <span class="badge text-bg-primary p-2 text-black">Java</span>
+        <span class="badge text-bg-primary p-2 text-black">JavaScript</span>
+        <span class="badge text-bg-primary p-2 text-black">Python</span>
+        <span class="badge text-bg-primary p-2 text-black">Angular</span>
+        <span class="badge text-bg-primary p-2 text-black">SpringBoot</span>
+        <span class="badge text-bg-primary p-2 text-black">SQL</span>
+        <span class="badge text-bg-primary p-2 text-black">FLask</span>
+        <span class="badge text-bg-primary p-2 text-black">APIs</span>
+        <span class="badge text-bg-primary p-2 text-black">Linux</span>
+        <span class="badge text-bg-primary p-2 text-black">HTML</span>
+        <span class="badge text-bg-primary p-2 text-black">CSS</span>
+        <span class="badge text-bg-primary p-2 text-black">Bootstrap</span>
+      </div>
+    </section>
+
+    <!-- contact me  -->
+    <section id="contact-me" class="pt-5 border-black border-top">
+
+      <h2 class="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-4">Contact Me</h2>
+
+
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="row w-100">
+          <div class="col-lg-6 mx-auto">
+            <p class="lead text-center fw-medium">I use an online form submission API called <a
+                href="https://formspree.io/" target="_blank" class="text-black"><b>Formspree.io</b></a> for my contact
+              form.
+              Please fill out the form below to get in touch. I'll get back to you ASAP!
+            </p>
+            <!-- https://formspree.io/f/xaneewdj -->
+            <form id="contactForm" action="https://formspree.io/f/xaneewdj" method="POST">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" name="_replyto" class="form-control" id="email" aria-describedby="emailHelp"
+                  placeholder="your_email@email.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="body" class="form-control" id="message" rows="5" placeholder="Nice website!"
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary text-black w-100" value="Send">Send</button>
+            </form>
+            <div class="text-wrapper">
+              <h2 id="successMessage" class="filling-text text-center my-4 text-black fw-medium ">Message sent
+                successfully!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <section class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top">
+        <div class="col-sm-4 col-3">
+          <p class="mb-3 mb-md-0 text-black fw-bold">Copyright &copy; <span id="year"></span> Yours Truly</p>
+        </div>
+
+        <a class="text-body-secondary" href="#" onclick="scrollToSection(event, 'navbar')">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="black" class="bi bi-arrow-up-circle-fill"
+            viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 
             0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 
             .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-        </svg>
-      </a>
+          </svg>
+        </a>
 
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-body-secondary" href="https://github.com/CodeDTX11" target="_blank"><img
-              src="assets/images/github.svg" height="40"></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/dylan-messerly/"
-            target="_blank"><img src="assets/images/linkedin.svg" height="40"></a></li>
-        <li class="ms-3"><a class="text-body-secondary" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
-              src="assets/images/leetcode-logo.png" height="40"></a></li>
-      </ul>
-    </footer>
+        <ul class="nav col-sm-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="https://github.com/CodeDTX11" target="_blank"><img
+                src="assets/images/github.svg" height="40"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/dylan-messerly/"
+              target="_blank"><img src="assets/images/linkedin.svg" height="40"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://leetcode.com/u/DTXcode11/" target="_blank"><img
+                src="assets/images/leetcode-logo.png" height="40"></a></li>
+        </ul>
+      </footer>
+    </section>
+
+</main>
+
+  <section id="end-banner" class="d-flex justify-content-center py-2">
+    <svg id="emoji" xmlns="http://www.w3.org/2000/svg" width="10%" height="auto" fill="#0d6efd" class="bi bi-emoji-sunglasses" 
+      viewBox="0 0 16 16">
+      <path
+        d="M4.968 9.75a.5.5 0 1 0-.866.5A4.5 4.5 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.5 3.5 0 0 1 8 11.5a3.5 3.5 0 0 1-3.032-1.75M7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A3 3 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.2 4.2 0 0 0 8 5c-.35 0-.69.04-1 .116" />
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0" />
+    </svg>
   </section>
 
   <script src="js/script.js"></script>
