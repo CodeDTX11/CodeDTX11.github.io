@@ -226,59 +226,59 @@ body {
   0% {
     content: "";
   }
-  
+
   8% {
     content: "D";
   }
-  
+
   16% {
     content: "Di";
   }
-  
+
   19% {
     content: "D";
   }
-  
+
   23% {
     content: "Dy";
   }
-  
+
   29% {
     content: "Dyl";
   }
-  
+
   32% {
     content: "Dyla";
   }
-  
+
   40% {
     content: "Dylan";
   }
-  
+
   48% {
     content: "Dylan ";
   }
-  
+
   56% {
     content: "Dylan M";
   }
-  
+
   60% {
     content: "Dylan Me";
   }
-  
+
   64% {
     content: "Dylan Mes";
   }
-  
+
   70% {
     content: "Dylan Mess";
   }
-  
+
   75% {
     content: "Dylan Messr";
   }
-  
+
   80% {
     content: "Dylan Mess";
   }
@@ -290,54 +290,19 @@ body {
   88% {
     content: "Dylan Messer";
   }
-  
+
   96% {
     content: "Dylan Messerl";
   }
-  
+
   100% {
     content: "Dylan Messerly";
   }
 
-  /* 30.7674%, 51.2791% { content: ""; }
-  31.9070%, 50.1395% { content: "w"; }
-  33.0465%, 49.0000% { content: "wr"; }
-  34.1860%, 47.8605% { content: "wri"; }
-  35.3256%, 46.7209% { content: "writ"; }
-  36.4651%, 45.5814% { content: "write"; }
-  37.6047%, 44.4419% { content: "writer"; }
-  
-54.6977%, 75.2093% { content: ""; }
-55.8372%, 74.0698% { content: "r"; }
-56.9767%, 72.9302% { content: "re"; }
-58.1163%, 71.7907% { content: "rea"; }
-59.2558%, 70.6512% { content: "read"; }
-60.3953%, 69.5116% { content: "reade"; }
-61.5349%, 68.3721% { content: "reader"; }
-
-78.6279%, 96.8605% { content: ""; }
-79.7674%, 95.7209% { content: "h"; }
-80.9070%, 94.5814% { content: "hu"; }
-82.0465%, 93.4419% { content: "hum"; }
-83.1860%, 92.3023% { content: "huma"; }
-84.3256%, 91.1628% { content: "human"; } */
-}
-
-@keyframes blink {
-  
-  0%,
-  100% {
-    opacity: 1;
-  }
-  
-  50% {
-    opacity: 0;
-  }
 }
 
 .typewriter {
   --caret: currentcolor;
-  text-align: center;
   width: 12ch;
   white-space: break-spaces;
   text-align: left;
@@ -345,14 +310,13 @@ body {
 
 .typewriter::before {
   content: "";
-  animation: typing 5s forwards;
+  animation: typing 4.5s forwards;
 }
 
 .typewriter::after {
   content: "";
-  border-right: 5px solid var(--caret);
-  /* border: 5px solid var(--caret); */
-  animation: blink 1s linear infinite;
+  border-right: 7px solid var(--caret);
+  animation: blink 1s steps(1) 5 forwards;
 }
 
 @media (prefers-reduced-motion) {
@@ -369,18 +333,36 @@ body {
   }
 }
 
-/* @keyframes sequencePopup {
-  0%, 100% { content: "developer"; }
-  25% { content: "writer"; }
-  50% { content: "reader"; }
-  75% { content: "human"; }
-} */
-
-/* .typewriter::before {
-  content: "Dylan Messerly";
-  animation: sequencePopup 12s linear infinite;
+.typewriter-subtitle {
+  width: 75%;
+  white-space: word-break;
+  text-align: left;
 }
-} */
+
+@media (max-width: 1000px) {
+  .typewriter-subtitle {
+    text-align: center;
+  }
+}
+
+.typewriter-subtitle::after {
+  content: "|";
+  opacity: 0%;
+  animation: blink 1s steps(1) infinite;
+  animation-delay: 5s;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 
 /* Old title animation, keeping for reference
 .filling-text-title {

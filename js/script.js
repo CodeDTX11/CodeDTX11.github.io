@@ -92,16 +92,25 @@ function handleSurprise(button) {
         // }, 1500); // Small delay to ensure transition works
     }
 }
-
 // Make sure year is updated dynamically, for footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
 
-// function handleSurprise(button) {
-//     const surpriseImage = document.getElementById('surpriseImage');
-//     const img = surpriseImage.querySelector('img');
-//     surpriseImage.style.display = 'block';
-//     setTimeout(() => {
-//         img.style.maxWidth = '100%';
-//     }, 100); // Small delay to ensure transition works
-// }
+function typeWriterEffect(elementId, text, speed = 100) {
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            document.querySelector(elementId).textContent += text[index];
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
+// Start the effect
+// typeWriterEffect(".typewriter-subtitle", "Welcome to My Portfolio", 100);
+
+setTimeout(() => {
+    typeWriterEffect(".typewriter-subtitle", "Welcome to My Portfolio", 200);
+}, 5000); // 1000ms = 1 second delay
