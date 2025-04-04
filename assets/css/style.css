@@ -328,7 +328,7 @@ body {
 
 @media (max-width: 500px) {
   .typewriter {
-    width: 6ch;
+    width: 100%;
     text-align: center;
   }
 }
