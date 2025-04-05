@@ -112,5 +112,5 @@ function typeWriterEffect(elementId, text, speed = 100) {
 // typeWriterEffect(".typewriter-subtitle", "Welcome to My Portfolio", 100);
 
 setTimeout(() => {
-    typeWriterEffect(".typewriter-subtitle", "Welcome to My Portfolio", 200);
-}, 5000); // 1000ms = 1 second delay
+    typeWriterEffect(".typewriter-subtitle", "Welcome To My Website", 200);
+}, 6000); // 1000ms = 1 second delay

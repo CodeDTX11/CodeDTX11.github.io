@@ -232,19 +232,19 @@ body {
   }
 
   16% {
-    content: "Di";
-  }
-
-  19% {
-    content: "D";
-  }
-
-  23% {
     content: "Dy";
   }
 
-  29% {
+  19% {
     content: "Dyl";
+  }
+
+  23% {
+    content: "Dyla";
+  }
+
+  29% {
+    content: "Dylam";
   }
 
   32% {
@@ -276,19 +276,19 @@ body {
   }
 
   75% {
-    content: "Dylan Messr";
-  }
-
-  80% {
-    content: "Dylan Mess";
-  }
-
-  84% {
     content: "Dylan Messe";
   }
 
-  88% {
+  80% {
     content: "Dylan Messer";
+  }
+
+  84% {
+    content: "Dylan Messerl";
+  }
+
+  88% {
+    content: "Dylan Messerli";
   }
 
   96% {
@@ -311,12 +311,13 @@ body {
 .typewriter::before {
   content: "";
   animation: typing 4.5s forwards;
+  animation-delay: 1s;
 }
 
 .typewriter::after {
   content: "";
   border-right: 7px solid var(--caret);
-  animation: blink 1s steps(1) 5 forwards;
+  animation: blink 1s steps(1) 6 forwards;
 }
 
 @media (prefers-reduced-motion) {
@@ -349,7 +350,7 @@ body {
   content: "|";
   opacity: 0%;
   animation: blink 1s steps(1) infinite;
-  animation-delay: 5s;
+  animation-delay: 6s;
 }
 
 @keyframes blink {
@@ -376,3 +377,9 @@ body {
   Keep the final state of the animation
   animation-delay: 0.5s;
 } */
+
+@media (max-width: 500px) {
+  #footer {
+    justify-content: center !important;
+  }
+}
