@@ -240,11 +240,11 @@ body {
   }
 
   23% {
-    content: "Dyla";
+    content: "Dyls";
   }
 
   29% {
-    content: "Dylam";
+    content: "Dyl";
   }
 
   32% {
@@ -334,23 +334,11 @@ body {
   }
 }
 
-/* .typewriter-subtitle {
-  width: 75%;
-  white-space: word-break;
-  text-align: left;
-}
-
-@media (max-width: 1000px) {
-  .typewriter-subtitle {
-    text-align: center;
-  }
-} */
-
 .typewriter-subtitle::after {
   content: "|";
   opacity: 0%;
   animation: blink 1s steps(1) infinite;
-  animation-delay: 6s;
+  animation-delay: 6.5s;
 }
 
 @keyframes blink {
@@ -364,7 +352,6 @@ body {
     opacity: 0;
   }
 }
-
 /* Old title animation, keeping for reference
 .filling-text-title {
   color: black;
