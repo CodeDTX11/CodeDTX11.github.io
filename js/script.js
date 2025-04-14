@@ -78,14 +78,14 @@ function handleSurprise(button) {
     if (!surpriseImage.classList.contains('active')) {
         surpriseImage.classList.add('active');
         // surpriseImage.style.display = 'block';
-        console.log('surpriseImage.classList', surpriseImage.classList);
+        // console.log('surpriseImage.classList', surpriseImage.classList);
         setTimeout(() => {
             img.style.maxWidth = '100%';
         }, 100); // Small delay to ensure transition works
         
     } else {
         surpriseImage.classList.remove('active');
-        console.log('remove surpriseImage.classList', surpriseImage.classList);
+        // console.log('remove surpriseImage.classList', surpriseImage.classList);
         img.style.maxWidth = '0%';
         // setTimeout(() => {
         //     surpriseImage.style.display = 'none';
