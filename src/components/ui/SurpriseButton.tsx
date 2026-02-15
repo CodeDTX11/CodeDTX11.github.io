@@ -5,7 +5,7 @@ interface SurpriseButtonProps {
 
 export function SurpriseButton({ isActive, onToggle }: SurpriseButtonProps) {
   return (
-    <div>
+    <>
       <button
         type="button"
         className="rainbow-btn btn btn-lg"
@@ -24,6 +24,6 @@ export function SurpriseButton({ isActive, onToggle }: SurpriseButtonProps) {
           style={{ maxWidth: isActive ? '100%' : '0%' }}
         />
       </div>
-    </div>
+    </>
   );
 }

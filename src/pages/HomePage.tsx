@@ -44,19 +44,21 @@ export function HomePage() {
   }
 
   return (
-    <main className="gradient-background">
-      <ScrollToTopButton scrollToSection={scrollToSection} />
-      <Navbar ref={navbarRef} scrollToSection={scrollToSection} />
-      <HeroSection />
-      <AboutMeSection ref={aboutRef} />
-      <AIChatbotSection ref={chatbotRef} />
-      <EducationSection ref={educationRef} />
-      <ExperienceSection ref={experienceRef} />
-      <ProjectsSection ref={projectsRef} />
-      <SkillsSection ref={skillsRef} />
-      <ContactSection ref={contactRef} />
-      <Footer scrollToSection={scrollToSection} />
+    <>
+      <main className="gradient-background">
+        <ScrollToTopButton scrollToSection={scrollToSection} />
+        <Navbar ref={navbarRef} scrollToSection={scrollToSection} />
+        <HeroSection />
+        <AboutMeSection ref={aboutRef} />
+        <AIChatbotSection ref={chatbotRef} />
+        <EducationSection ref={educationRef} />
+        <ExperienceSection ref={experienceRef} />
+        <ProjectsSection ref={projectsRef} />
+        <SkillsSection ref={skillsRef} />
+        <ContactSection ref={contactRef} />
+        <Footer scrollToSection={scrollToSection} />
+      </main>
       <EndBanner />
-    </main>
+    </>
   );
 }
