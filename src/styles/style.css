@@ -1,0 +1,377 @@
+.background-img-container {
+  position: relative;
+  height: 93vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/images/Tsunami_by_hokusai.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 88%;
+  z-index: 1;
+}
+
+/* old way of doing background image with text overlay that avoided opacity change for text, (keeping for reference), the new way above seems to work faster 
+ .background-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height:93vh;
+  width:100%;
+}
+.background-img:after {
+  content:'';
+  background-image: url('/assets/images/Tsunami_by_hokusai.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height:93vh;
+  width:100%;
+  top:0px;
+  left: 0px;
+  z-index:-1;
+  opacity: 80%;
+} */
+
+#title {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  color: black;
+}
+
+body {
+  /* Hide everything initially */
+  visibility: hidden;
+}
+
+.gradient-background {
+  background: linear-gradient(280deg, #042962, #4186a7, #6ed9dd);
+  background-size: 180% 180%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: none;
+  /* Hidden by default */
+}
+
+#scrollToTopBtn svg {
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  #scrollToTopBtn svg {
+    height: 30px;
+  }
+}
+
+.pop-fade-element {
+  background-color: #E6EEF6;
+  opacity: 0;
+  transform: scale(0.85) translateY(40px);
+  transition: all .8s ease;
+}
+
+.pop-fade-element.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.rainbow-btn {
+  background: linear-gradient(115deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 215px;
+  /* Set a fixed width for the button */
+  height: 50px;
+  text-align: center;
+  /* Center the text inside the button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: rainbowShift 12s linear infinite;
+}
+
+/* Hover effect */
+.rainbow-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px 5px rgba(255, 255, 255, 0.4);
+}
+
+/* Animation */
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.rainbow-text {
+  color: transparent;
+  /* user-select: none; */
+  visibility: hidden;
+}
+
+.rainbow-text.active {
+  background: linear-gradient(115deg, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  background-clip: text;
+  visibility: visible;
+  -webkit-background-clip: text;
+  animation: rainbowShift 12s linear infinite;
+}
+
+.rickroll-img {
+  max-width: 0%;
+  height: auto;
+  transition: max-width 1.5s ease-in-out;
+}
+
+.text-wrapper {
+  overflow: hidden;
+  /* Ensures the text is initially hidden */
+}
+
+.satisfy {
+  font-family: "Satisfy", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: max(7.5vw, 5rem)
+}
+
+@keyframes revealClip {
+  100% {
+    clip-path: inset(0 0 0 0);
+    /* Remove clipping, revealing the text */
+  }
+}
+
+.filling-text {
+  clip-path: inset(0 100% 0 0);
+  /* Start with text clipped from the right */
+  transition: clip-path 3s ease-out;
+}
+
+.filling-text.reveal {
+  clip-path: inset(0 0 0 0);
+  /* Removes clipping, fully reveals text */
+}
+
+.gradio-embed {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.nav-link:hover,
+#download:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+#end-banner {
+  background-color: black;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#emoji {
+  max-width: 75px;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+  0% {
+    content: "";
+  }
+
+  8% {
+    content: "D";
+  }
+
+  16% {
+    content: "Dy";
+  }
+
+  19% {
+    content: "Dyl";
+  }
+
+  23% {
+    content: "Dyls";
+  }
+
+  29% {
+    content: "Dyl";
+  }
+
+  32% {
+    content: "Dyla";
+  }
+
+  40% {
+    content: "Dylan";
+  }
+
+  48% {
+    content: "Dylan ";
+  }
+
+  56% {
+    content: "Dylan M";
+  }
+
+  60% {
+    content: "Dylan Me";
+  }
+
+  64% {
+    content: "Dylan Mes";
+  }
+
+  70% {
+    content: "Dylan Mess";
+  }
+
+  75% {
+    content: "Dylan Messe";
+  }
+
+  80% {
+    content: "Dylan Messer";
+  }
+
+  84% {
+    content: "Dylan Messerl";
+  }
+
+  88% {
+    content: "Dylan Messerli";
+  }
+
+  96% {
+    content: "Dylan Messerl";
+  }
+
+  100% {
+    content: "Dylan Messerly";
+  }
+
+}
+
+.typewriter {
+  --caret: currentcolor;
+  width: 12ch;
+  white-space: break-spaces;
+  text-align: left;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 4.5s forwards;
+  animation-delay: 1s;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 7px solid var(--caret);
+  animation: blink 1s steps(1) 6 forwards;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+    content: "Dylan Messerly";
+  }
+}
+
+@media (max-width: 500px) {
+  .typewriter {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.typewriter-subtitle::after {
+  content: "|";
+  opacity: 0%;
+  animation: blink 1s steps(1) infinite;
+  animation-delay: 6.5s;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* Old title animation, keeping for reference
+.filling-text-title {
+  color: black;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4);
+  clip-path: inset(0 100% 0 0);
+  Start with text clipped from the right
+  animation: revealClip 4s ease-out;
+  Animation to reveal the text
+  animation-fill-mode: forwards;
+  Keep the final state of the animation
+  animation-delay: 0.5s;
+} */
+
+@media (max-width: 500px) {
+  #footer {
+    justify-content: center !important;
+  }
+}
