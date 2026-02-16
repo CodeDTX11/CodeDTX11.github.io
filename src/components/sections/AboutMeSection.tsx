@@ -55,9 +55,9 @@ export const AboutMeSection = forwardRef<HTMLElement>((_, ref) => {
             I'm always interested in connecting with others who share a passion for building robust, scalable systems.
             Feel free to check out my resumé and links below.
             <br /><br />
-            Check out my AI Career Chatbot to learn more about me!
+            Check out my AI Personal Career Chatbot to learn more about me!
             It is hosted on Hugging Face Spaces and uses Google's Gemini 2.5 Flash model. It uses my linkedin profile
-            and personal context summary to answer questions about my skills and experience. If you ask a question that
+            and a personal context summary to answer questions about my skills and experience. If you ask a question that
             it does not know or if you prompt it with your email it will send me a message to let me know.
           </p>
           <div className="d-grid gap-2 d-flex flex-wrap justify-content-start">

@@ -1,8 +1,6 @@
 import { useRef } from 'react';
 import { useBodyVisibility } from '../hooks/useBodyVisibility';
 import { Navbar } from '../components/layout/Navbar';
-import { Footer } from '../components/layout/Footer';
-import { EndBanner } from '../components/layout/EndBanner';
 import { ScrollToTopButton } from '../components/layout/ScrollToTopButton';
 import { HeroSection } from '../components/sections/HeroSection';
 import { AboutMeSection } from '../components/sections/AboutMeSection';
@@ -12,6 +10,8 @@ import { ExperienceSection } from '../components/sections/ExperienceSection';
 import { ProjectsSection } from '../components/sections/ProjectsSection';
 import { SkillsSection } from '../components/sections/SkillsSection';
 import { ContactSection } from '../components/sections/ContactSection';
+import { Footer } from '../components/layout/Footer';
+import { EndBanner } from '../components/layout/EndBanner';
 
 export function HomePage() {
   useBodyVisibility('/assets/images/Tsunami_by_hokusai.jpg');
