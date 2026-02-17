@@ -11,7 +11,7 @@ const LinkIcon = () => (
 export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section ref={ref} id="projects" className="py-5 border-black border-top">
-      <h2 className="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Projects</h2>
+      <h2 className="display-6 fw-bold text-body-emphasis text-center text-decoration-underline mb-5">Personal Projects</h2>
 
       <PopFadeCard className="container px-4 mt-3 rounded-3">
         <div className="p-3 text-center">
@@ -20,15 +20,15 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
               <img src="/assets/images/mgt-app.png" className="d-block mx-lg-auto img-fluid rounded-3" alt="project image" loading="lazy" />
             </div>
             <div className="col-lg-8">
-              <h2 className="fs-2 fw-bold lh-1">Employee Management App</h2>
-              <p className="lead text-start">
-                • Built a full-stack web application that provides businesses and their employees a smart and efficient
-                way of communicating and organizing in collaboration with a team.<br />
-                • Integrated the client and server by using scalable RESTful API endpoints and provided real-time client
-                side updates to their feed.<br />
-                • Utilized Spring Boot and JPA to create an efficient and layered PostgreSQL database on the backend
-                and used Angular to create a responsive and user-friendly front-end.<br />
-              </p>
+              <h2 className="fs-2 fw-bold lh-1 mb-3">Employee Management App</h2>
+              <ul className="lead text-start">
+                <li className="mb-2">Built a full-stack web application that provides businesses and their employees a smart and efficient
+                  way of communicating and organizing in collaboration with a team.</li>
+                <li className="mb-2">Integrated the client and server by using scalable RESTful API endpoints and provided real-time client
+                  side updates to their feed.</li>
+                <li className="mb-2">Utilized Spring Boot and JPA to create an efficient and layered PostgreSQL database on the backend
+                  and used Angular to create a responsive and user-friendly front-end.</li>
+              </ul>
               <a href="https://github.com/CodeDTX11/employee_mgt_fullstack" target="_blank" rel="noreferrer"><LinkIcon /></a>
             </div>
           </div>
@@ -39,13 +39,13 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
         <div className="p-3 text-center">
           <div className="row flex-lg-row-reverse align-items-center g-5">
             <div className="col-lg-8">
-              <h2 className="fs-2 fw-bold lh-1">Spotify Guessing Game</h2>
-              <p className="lead text-start">
-                • Created a front-end Angular application that uses data pulled via the Spotify Web API to create a game
-                that has the player guess the artists of the provided track samples.<br />
-                • Delivered a dynamic and unique play experience each time with configurable settings and randomized
-                tracks and artists of the player's specified genre.
-              </p>
+              <h2 className="fs-2 fw-bold lh-1 mb-3">Spotify Guessing Game</h2>
+              <ul className="lead text-start">
+                <li className="mb-2">Created a front-end Angular application that uses data pulled via the Spotify Web API to create a game
+                  that has the player guess the artists of the provided track samples.</li>
+                <li className="mb-2">Delivered a dynamic and unique play experience each time with configurable settings and randomized
+                  tracks and artists of the player's specified genre.</li>
+              </ul>
               <a href="https://github.com/CodeDTX11/guess_who_spotify" target="_blank" rel="noreferrer"><LinkIcon /></a>
             </div>
             <div className="col-10 col-sm-8 col-lg-4">
@@ -62,13 +62,13 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
               <img src="/assets/images/xapi.png" className="d-block mx-lg-auto img-fluid rounded-3" alt="project image" loading="lazy" />
             </div>
             <div className="col-lg-8">
-              <h2 className="fs-2 fw-bold lh-1">Twitter (X) Backend API</h2>
-              <p className="lead text-start">
-                • Developed a backend RESTful Web Service that mimics Twitter with multiple endpoints for creating,
-                updating and retrieving user information and social media posts.<br />
-                • Created an efficient database schema/ERD supported by PostgreSQL in PGAdmin4 and utilized Spring Boot
-                and JPA to seamlessly handle data to and from the server.
-              </p>
+              <h2 className="fs-2 fw-bold lh-1 mb-3">Twitter (X) Backend API</h2>
+              <ul className="lead text-start">
+                <li className="mb-2">Developed a backend RESTful Web Service that mimics Twitter with multiple endpoints for creating,
+                  updating and retrieving user information and social media posts.</li>
+                <li className="mb-2">Created an efficient database schema/ERD supported by PostgreSQL in PGAdmin4 and utilized Spring Boot
+                  and JPA to seamlessly handle data to and from the server.</li>
+              </ul>
               <a href="https://github.com/CodeDTX11/Twitter_api" target="_blank" rel="noreferrer"><LinkIcon /></a>
             </div>
           </div>
@@ -79,11 +79,11 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
         <div className="p-3 text-center">
           <div className="row flex-lg-row-reverse align-items-center g-5">
             <div className="col-lg-8">
-              <h2 className="fs-2 fw-bold lh-1">Snake</h2>
-              <p className="lead text-start">
-                • Classic console based snake game! Programmed in C++ and runs in a windows environment.<br />
-                • Complete with pause, replay, high score, and death animation.
-              </p>
+              <h2 className="fs-2 fw-bold lh-1 mb-3">Snake</h2>
+              <ul className="lead text-start">
+                <li className="mb-2">Classic console based snake game! Programmed in C++ and runs in a windows environment.</li>
+                <li className="mb-2">Complete with pause, replay, high score, and death animation.</li>
+              </ul>
               <a href="https://github.com/CodeDTX11/snake" target="_blank" rel="noreferrer"><LinkIcon /></a>
             </div>
             <div className="col-10 col-sm-8 col-lg-4">
@@ -100,11 +100,11 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
               <img src="/assets/images/pong.png" className="d-block mx-lg-auto img-fluid rounded-3" alt="project image" width="300" loading="lazy" />
             </div>
             <div className="col-lg-8">
-              <h2 className="fs-2 fw-bold lh-1">Classic Pong</h2>
-              <p className="lead text-start">
-                • Created the classic pong game via a Python coded GUI. You can't beat the classics.<br />
-                • Message me for a challenge!
-              </p>
+              <h2 className="fs-2 fw-bold lh-1 mb-3">Classic Pong</h2>
+              <ul className="lead text-start">
+                <li className="mb-2">Created the classic pong game via a Python coded GUI. You can't beat the classics.</li>
+                <li className="mb-2">Message me for a challenge!</li>
+              </ul>
               <a href="https://github.com/CodeDTX11/PyProjects/tree/main/pong-day22" target="_blank" rel="noreferrer"><LinkIcon /></a>
             </div>
           </div>
@@ -115,12 +115,12 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
         <div className="p-3 text-center">
           <div className="row flex-lg-row-reverse align-items-center g-5">
             <div className="col-lg-8">
-              <h2 className="fs-2 fw-bold lh-1">LeetCode Grind</h2>
-              <p className="lead text-start">
-                • I've put in the work on data structures and algorithms by solving 200+ LeetCode problems!<br />
-                • When I wasn't working on projects or studying, I was grinding leetcode problems to sharpen my
-                problem-solving skills. Also solved some HackerRank problems here and there.
-              </p>
+              <h2 className="fs-2 fw-bold lh-1 mb-3">LeetCode Grind</h2>
+              <ul className="lead text-start">
+                <li className="mb-2">I've put in the work on data structures and algorithms by solving 200+ LeetCode problems!</li>
+                <li className="mb-2">When I wasn't working on projects or studying, I was grinding leetcode problems to sharpen my
+                  problem-solving skills. Also solved some HackerRank problems here and there.</li>
+              </ul>
               <a href="https://leetcode.com/u/DTXcode11/" target="_blank" rel="noreferrer"><LinkIcon /></a>
             </div>
             <div className="col-10 col-sm-8 col-lg-4">
@@ -137,11 +137,11 @@ export const ProjectsSection = forwardRef<HTMLElement>((_, ref) => {
               <img src="/assets/images/python-image.png" className="d-block mx-lg-auto img-fluid rounded-3" alt="project image" loading="lazy" />
             </div>
             <div className="col-lg-8">
-              <h2 className="fs-2 fw-bold lh-1">So Much More!</h2>
-              <p className="lead text-start">
-                • Plenty more projects! Check out my GitHub for more! I am always working on something new and am
-                currently learning Python and sharpening my AI tools and skills.
-              </p>
+              <h2 className="fs-2 fw-bold lh-1 mb-3">So Much More!</h2>
+              <ul className="lead text-start">
+                <li className="mb-2">Plenty more projects! Check out my GitHub for more! I am always working on something new and am
+                  currently learning Python and sharpening my AI tools and skills.</li>
+              </ul>
               <a href="https://github.com/CodeDTX11?tab=repositories" target="_blank" rel="noreferrer"><LinkIcon /></a>
             </div>
           </div>

@@ -51,9 +51,9 @@ export function HomePage() {
         <HeroSection />
         <AboutMeSection ref={aboutRef} />
         <AIChatbotSection ref={chatbotRef} />
-        <EducationSection ref={educationRef} />
         <ExperienceSection ref={experienceRef} />
         <ProjectsSection ref={projectsRef} />
+        <EducationSection ref={educationRef} />
         <SkillsSection ref={skillsRef} />
         <ContactSection ref={contactRef} />
         <Footer scrollToSection={scrollToSection} />
