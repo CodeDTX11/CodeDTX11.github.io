@@ -2,12 +2,16 @@ import { forwardRef, useEffect } from 'react';
 
 export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
   useEffect(() => {
+    // The typing animation is started from inside a delayed timeout, so we keep
+    // the interval handle in outer scope to guarantee cleanup on unmount.
+    let interval: ReturnType<typeof setInterval> | undefined;
+
     const timer = setTimeout(() => {
       const el = document.querySelector('.typewriter-subtitle') as HTMLElement | null;
       if (!el) return;
       const text = 'Welcome To My Website';
       let index = 0;
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         if (index < text.length) {
           el.textContent += text[index];
           index++;
@@ -17,7 +21,15 @@ export const HeroSection = forwardRef<HTMLElement>((_, ref) => {
       }, 200);
     }, 8000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      // Clear both timers:
+      // - timeout: prevents creating a new interval if unmounted early
+      // - interval: stops character appends if unmounted after timeout fired
+      clearTimeout(timer);
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
   }, []);
 
   return (

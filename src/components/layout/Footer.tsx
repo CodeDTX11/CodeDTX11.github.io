@@ -12,10 +12,12 @@ export function Footer({ scrollToSection }: FooterProps) {
           </p>
         </div>
 
-        <a
+        <button
+          type="button"
           className="text-body-secondary"
-          href="#"
-          onClick={(e) => { e.preventDefault(); scrollToSection('navbar'); }}
+          aria-label="Scroll to top"
+          onClick={() => scrollToSection('navbar')}
+          style={{ background: 'none', border: 'none', padding: 0 }}
         >
           <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="black" className="bi bi-arrow-up-circle-fill"
             viewBox="0 0 16 16">
@@ -23,7 +25,7 @@ export function Footer({ scrollToSection }: FooterProps) {
             0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1
             .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
           </svg>
-        </a>
+        </button>
 
         <ul className="nav col-sm-4 justify-content-end list-unstyled d-flex">
           <li className="ms-3">

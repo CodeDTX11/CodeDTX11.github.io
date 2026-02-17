@@ -12,6 +12,8 @@ export function useScrollToTop() {
     }
 
     window.addEventListener('scroll', handleScroll);
+    // Sync initial state in cases like browser scroll restoration.
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
