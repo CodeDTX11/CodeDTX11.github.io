@@ -12,6 +12,8 @@ export function useIntersectionObserver(threshold = 0.2) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
+            // Unobserve once visible — the animation only needs to trigger once
+            observer.unobserve(entry.target);
           }
         });
       },

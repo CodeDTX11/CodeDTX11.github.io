@@ -4,9 +4,11 @@ export const ContactSection = forwardRef<HTMLElement>((_, ref) => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
     try {
       const formData = new FormData();
       formData.append('_replyto', email);
@@ -27,6 +29,8 @@ export const ContactSection = forwardRef<HTMLElement>((_, ref) => {
       }
     } catch {
       alert('There was an error submitting the form. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -71,7 +75,9 @@ export const ContactSection = forwardRef<HTMLElement>((_, ref) => {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary text-black w-100" value="Send">Send</button>
+              <button type="submit" className="btn btn-primary text-black w-100" disabled={isLoading}>
+                {isLoading ? 'Sending...' : 'Send'}
+              </button>
             </form>
             <div className="text-wrapper">
               <h2 id="successMessage" className={`filling-text text-center my-4 text-black fw-medium${submitted ? ' reveal' : ''}`}>

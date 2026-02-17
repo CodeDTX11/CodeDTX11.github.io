@@ -11,6 +11,12 @@ export const AIChatbotSection = forwardRef<HTMLElement>((_, ref) => {
       </h3>
       <div className="container mb-5">
         <gradio-app className="gradio-embed" src="https://codedtx-ai-career-chatbot.hf.space"></gradio-app>
+        <p className="text-center text-muted mt-2 fs-6">
+          If the chatbot isn't loading, try opening it directly on{' '}
+          <a href="https://codedtx-ai-career-chatbot.hf.space" target="_blank" rel="noopener noreferrer">
+            Hugging Face
+          </a>.
+        </p>
       </div>
     </section>
   );
