@@ -11,7 +11,7 @@ export function useScrollToTop() {
       setVisible(scrollTop >= 300 && !nearBottom);
     }
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     // Sync initial state in cases like browser scroll restoration.
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
